@@ -1,0 +1,36 @@
+/**
+ * Write a description of class For_Loops here.
+ *
+ * @author (Ethan Nesbit)
+ * @version (Version 1  09/17/19)
+ */
+public class For_Loops
+{
+    public static void main( String[] args){
+    // instance variables - replace the example below with your own
+    
+    int x;
+    int y;
+    cube=0;
+    decInt=99;
+    System.out.println();
+    System.out.println("x+\t+Cube");
+    for(x=1;x<=10;x++){
+        cube=x*x*x;
+        System.out.println(x+"\t"+cube);
+    }
+    System.out.println();
+    System.out.println("Y+\t+Decreasing Integer");
+    for(y=0;y<=98;y+=2){
+        decInt=decInt-y;
+        System.out.println(y+"\t"+decInt);
+    }
+    String a = "The quick brown fox jumped over the lazy dog";
+    n=a.length();
+    
+    public int sampleMethod(int y)
+    {
+        // put your code here
+        return x + y;
+    }
+}
