@@ -11,26 +11,36 @@ public class For_Loops
     
     int x;
     int y;
-    cube=0;
-    decInt=99;
+    int cube=0;
+    int decInt=99;
+   
     System.out.println();
-    System.out.println("x+\t+Cube");
+    System.out.println("x\tCube");
     for(x=1;x<=10;x++){
         cube=x*x*x;
         System.out.println(x+"\t"+cube);
     }
     System.out.println();
-    System.out.println("Y+\t+Decreasing Integer");
+    System.out.println("\tDecreasing Integer");
     for(y=0;y<=98;y+=2){
-        decInt=decInt-y;
-        System.out.println(y+"\t"+decInt);
+        decInt=99-y;
+        System.out.println(decInt);
     }
     String a = "The quick brown fox jumped over the lazy dog";
-    n=a.length();
+    int n;
+    a.charAt(0);
+    for(n=0;n<a.length();n++){
+        
+        System.out.println(a.charAt(n));
+        
+    //System.out.println(a.charAt(1));
+    //System.out.println(a.charAt(2));
     
-    public int sampleMethod(int y)
-    {
+     
+     
+    
         // put your code here
-        return x + y;
+      //  return x + y;
     }
+}
 }
