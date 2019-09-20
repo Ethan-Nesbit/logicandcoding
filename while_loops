@@ -1,0 +1,61 @@
+
+/**
+ * Write a description of class while_loop here.
+ *
+ * @author (your name)
+ * @version (a version number or a date)
+ */
+import java.util.Scanner;
+public class while_loop
+
+{
+    public static void main ( String args[]){
+    /*int i=0;
+    
+    while (i<=4){
+        System.out.println(i*i);
+        i++;
+    }
+    System.out.println("The loop finished because i<=4 is false.");   */
+    
+    
+    /*int num=10, i=1;
+    while(i<=num/2){
+        if(num%i==0)
+            System.out.println(1);
+        else 
+            System.out.println(0);
+        i++;
+    }*/
+    
+    
+    /*int secret=9, guess=secret-1;
+    Scanner keys= new Scanner(System.in);
+    
+    while(guess!=secret){
+        System.out.println("Guess my secret number between 1 and 10: ");
+        guess=keys.nextInt();
+    }
+    System.out.println("\nSuccess! My secret number was "+secret);
+    keys.close();*/
+    
+    
+    /*int i=1;
+    System.out.println("Looping");
+    while(i<100){
+        System.out.println("Still looping...");
+        i--;
+    }*/
+    
+    
+    /*int i=0;
+    while(i<100){
+        System.out.println(i);
+        if(i==50)
+            break;
+        }
+        System.out.println("The loop is complete with i = "+i);*/
+}
+}
+
+
