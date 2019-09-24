@@ -55,7 +55,40 @@ public class while_loop
             break;
         }
         System.out.println("The loop is complete with i = "+i);*/
+        
+    
+    int i;
+    double j,k,a,b;
+    System.out.println("Choose an option:");
+    Scanner keys=new Scanner(System.in);
+    System.out.println("1) Square a Number");
+    System.out.println("2) Cube a Number");
+    System.out.println("3) Quit");
+    i=keys.nextInt();
+    while(i!=3){
+    if(i==1){
+
+        System.out.println("Enter a Number to Square");
+        j=keys.nextDouble();
+        a=j*j;
+        System.out.println(a);
+        System.out.println("1) Square a Number");
+        System.out.println("2) Cube a Number");
+        System.out.println("3) Quit");
+        i=keys.nextInt();
+}
+    else if(i==2){
+        System.out.println("Enter a Number to Cube");
+        k=keys.nextDouble();
+        b=k*k*k;
+        System.out.println(b);
+        System.out.println("1) Square a Number");
+        System.out.println("2) Cube a Number");
+        System.out.println("3) Quit");
+        i=keys.nextInt();
 }
 }
-
-
+System.out.println("Program Closed");
+keys.close();
+}
+}
