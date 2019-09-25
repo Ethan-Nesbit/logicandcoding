@@ -98,9 +98,9 @@ public class while_loop
         System.out.println();
         i=keys.nextInt();
 }
+}
 System.out.println();
 System.out.println("Program Closed");
 keys.close();
-}
 }
 }
