@@ -1,4 +1,5 @@
 
+
 /**
  * Write a description of class while_loop here.
  *
@@ -64,31 +65,42 @@ public class while_loop
     System.out.println("1) Square a Number");
     System.out.println("2) Cube a Number");
     System.out.println("3) Quit");
+    System.out.println();
     i=keys.nextInt();
     while(i!=3){
     if(i==1){
-
+        System.out.println();
         System.out.println("Enter a Number to Square");
+        System.out.println();
         j=keys.nextDouble();
         a=j*j;
-        System.out.println(a);
+        System.out.println();
+        System.out.println(j+" squared is "+a);
+        System.out.println();
         System.out.println("1) Square a Number");
         System.out.println("2) Cube a Number");
         System.out.println("3) Quit");
+        System.out.println();
         i=keys.nextInt();
 }
     else if(i==2){
+        System.out.println();
         System.out.println("Enter a Number to Cube");
+        System.out.println();
         k=keys.nextDouble();
         b=k*k*k;
-        System.out.println(b);
+        System.out.println();
+        System.out.println(k+" cubed is "+b);
+        System.out.println();
         System.out.println("1) Square a Number");
         System.out.println("2) Cube a Number");
         System.out.println("3) Quit");
+        System.out.println();
         i=keys.nextInt();
 }
-}
+System.out.println();
 System.out.println("Program Closed");
 keys.close();
+}
 }
 }
