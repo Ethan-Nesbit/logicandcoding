@@ -58,7 +58,7 @@ public class while_loop
         System.out.println("The loop is complete with i = "+i);*/
         
     
-    int i;
+    /*int i;
     double j,k,a,b;
     System.out.println("Choose an option:");
     Scanner keys=new Scanner(System.in);
@@ -101,6 +101,27 @@ public class while_loop
 }
 System.out.println();
 System.out.println("Program Closed");
-keys.close();
+keys.close()*/
+
+
+int i,j,k,l,m;
+Scanner keys=new Scanner(System.in);
+System.out.println("Enter a numerator and a denominator:");
+System.out.println();
+i=keys.nextInt();
+System.out.println("Numerator: "+i);
+j=keys.nextInt();
+System.out.println("Denominator: "+j);
+m=i;
+/* alternative code:
+ * k=i/j;
+ * l=i%j;
+ * System.out.println(k+" "+l+"/"+j)
+ */
+while(j<=i){
+    i=i-j;
+}
+k=i/j;
+System.out.println(m+"/"+j+" is "+k+" "+i+"/"+j);
 }
 }
