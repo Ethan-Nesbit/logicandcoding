@@ -1,5 +1,3 @@
-
-
 /**
  * Write a description of class while_loop here.
  *
@@ -104,7 +102,7 @@ System.out.println("Program Closed");
 keys.close()*/
 
 
-int i,j,k,l,m;
+/*int i,j,k,l;
 Scanner keys=new Scanner(System.in);
 System.out.println("Enter a numerator and a denominator:");
 System.out.println();
@@ -112,16 +110,34 @@ i=keys.nextInt();
 System.out.println("Numerator: "+i);
 j=keys.nextInt();
 System.out.println("Denominator: "+j);
-m=i;
+l=0;
 /* alternative code:
  * k=i/j;
  * l=i%j;
  * System.out.println(k+" "+l+"/"+j)
  */
-while(j<=i){
+/*while(j<=i){
     i=i-j;
+    l++;
 }
-k=i/j;
-System.out.println(m+"/"+j+" is "+k+" "+i+"/"+j);
+System.out.println(i+"/"+j+" is "+l+" "+i+"/"+j);*/
+
+
+String a;
+int b=0;
+System.out.println("Knock, Knock, Who's There?");
+Scanner keys=new Scanner(System.in);
+a=keys.next();
+while(b=0){
+    if(a.equals("banana")){
+    System.out.println("Banana who?");
+    a=keys.next();
+}
+else if(a.equals("orange")){
+    System.out.println("Orange you glad you didn't type banana?");
+    a=keys.next();
+}
+else if(){
+    
 }
 }
