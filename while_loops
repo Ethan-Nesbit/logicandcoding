@@ -124,12 +124,11 @@ System.out.println(i+"/"+j+" is "+l+" "+i+"/"+j);*/
 
 
 String a;
-int b=0;
 System.out.println("Knock, Knock, Who's There?");
 Scanner keys=new Scanner(System.in);
 a=keys.next();
-while(b=0){
-    if(a.equals("banana")){
+while(!a.equals("owo")&&!a.equals("uwu")){
+if(a.equals("banana")){
     System.out.println("Banana who?");
     a=keys.next();
 }
@@ -137,7 +136,14 @@ else if(a.equals("orange")){
     System.out.println("Orange you glad you didn't type banana?");
     a=keys.next();
 }
-else if(){
-    
+else{
+    System.out.println("You are not playing my game very well.");
+    System.out.println();
+    System.out.println("Knock, Knock, Who's There?");
+    a=keys.next();
+}
+}
+System.out.println("Game over, you found my weakness...");
+keys.close();
 }
 }
