@@ -1,0 +1,30 @@
+import java.util.Scanner;
+public class FibSequence{
+public static void main(String args[]){
+    System.out.println("Enter a number:");
+    Scanner keys=new Scanner(System.in);
+    int i=keys.nextInt();
+    long a=sequence(i);
+    System.out.println("The number at position "+i+" in the Fibonacci sequence is "+a);
+}
+public static long sequence(int term){
+    long a=1;
+    long b=1;
+    long c=0;
+    if(term==1){
+        c=1;
+        return c;
+    }
+    else if(term==2){
+        c=1;
+        return c;
+    }
+    for(int i=1;i<=term-2;i++){
+        c=b+a;
+        a=b;
+        b=c;
+
+}
+    return c;
+}
+}
