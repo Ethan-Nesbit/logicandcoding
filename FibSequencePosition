@@ -1,0 +1,40 @@
+import java.util.Scanner;
+public class FibSequence{
+public static void main(String args[]){
+    System.out.println("Enter a number:");
+    Scanner keys=new Scanner(System.in);
+    int i=keys.nextInt();
+    long[] FibArray=new long[i];
+    sequence(i,FibArray);
+    System.out.println("The Fibonacci sequence up to position "+i+" is "+java.util.Arrays.toString(FibArray));
+}
+public static long[] sequence(int term,long[] FibArray){
+    long a=1;
+    long b=1;
+    long c=0;
+    if(term==1){
+        FibArray[0]=1;
+        return FibArray;
+    }
+    else if(term==2){
+        FibArray[0]=1;
+        FibArray[1]=1;
+        return FibArray;
+    }
+    else{
+        FibArray[0]=1;
+        FibArray[1]=1;
+        for(int i=1;i<=term;i++){
+        c=b+a;
+        a=b;
+        b=c;
+        if(i>=3){
+            FibArray[i-1]=c;
+        }
+        else{
+        }
+    }
+    return FibArray;
+}
+}
+}
