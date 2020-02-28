@@ -46,6 +46,7 @@ public class ArrayList{
         for(int i=index;i<data.length-1;i++){ 
         data[i]=data[i+1];
     }
+        last=last-1;
         return a;
     }
 
@@ -56,12 +57,17 @@ public class ArrayList{
         data[i]=data[i-1];
     }
         data[index]=newValue;
+        last=last+1;
     }
 
     
     //adds newValue to the end of the list
     public void add(int newValue){
-        
+        if(last==data.length-1){
+            resize();
+        }
+        data[last+1]=newValue;
+        last=last+1;
     }
 
 
@@ -69,7 +75,8 @@ public class ArrayList{
     //This is intentional.
     //This method should double the capacity
     private void resize(){
-        
+        int n=data.length;
+        data
     }
 
 
