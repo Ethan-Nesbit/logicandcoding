@@ -53,7 +53,7 @@ public class ArrayList{
     //Precondition:  0 <= index <= last+1
     //Inserts newValue at index.  Everything from index on gets shifted up
     public void add(int index, int newValue){
-        for(int i=data.length+1;i>index;i--){  
+        for(int i=data.length-1;i>index;i--){  
         data[i]=data[i-1];
     }
         data[index]=newValue;
@@ -66,8 +66,8 @@ public class ArrayList{
         if(last==data.length-1){
             resize();
         }
-        data[last+1]=newValue;
         last=last+1;
+        data[last]=newValue;
     }
 
 
@@ -75,9 +75,9 @@ public class ArrayList{
     //This is intentional.
     //This method should double the capacity
     private void resize(){
-        int n=data.length;
-        int[]data2=new int[n*2];
-        for(int i=0; i<last;i++){
+        int n=data.length*2;
+        int[]data2=new int[n];
+        for(int i=0;i<=last;i++){
             data2[i]=data[i];
         }
         data=data2;
@@ -87,11 +87,19 @@ public class ArrayList{
     //returns, for example, "[3, 6, 7, 9]"
     //This will be helpful for your debugging
     public String toString(){
-        String a="s";
-        return a;
+        String a;
+        if(last>=0){
+        a="[";
+        for(int i=0;i<last;i++){
+            a=a+data[i]+", ";
+        }
+        a=a+data[last]+"]";
     }
-
-
+    else{
+        a="[]";
+    }
+        return a;
+   }
     //returns true if two lists have exactly the same elements
     //in exactly the same order
     public boolean equals(ArrayList otherList){
